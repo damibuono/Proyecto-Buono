@@ -46,6 +46,7 @@
 .header a:hover{
   color: rgb(252, 87, 87);
   font-weight: bold;
+  transition: .3s;
 }
 
 
@@ -68,6 +69,7 @@
 .footer a:hover{
   color: rgb(252, 87, 87);
   font-weight: bold;
+  transition: .3s;
 }
 .main-index{
   min-height: 60vh;
