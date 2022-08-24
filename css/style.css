@@ -1,0 +1,217 @@
+/* EL ARCHIVO JS ES PARA USAR ANIMACIONES COPADAS: MIRAR PPT CLASE 8 */
+/* CLOUDINARY.com para sacar imagenes de url y que no sean tan pesadas */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header y footer para todas las páginas */
+/* ----------------------------------------------- */
+
+.logo {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header{
+  background-color: rgb(110, 0, 0) ;
+  padding: 10px;
+  border: 5px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  height: 80px;
+}
+
+.header ul{
+  list-style: none;
+  display: flex;
+}
+
+.header li{
+  padding: 15px
+}
+
+.header a, .footer a{
+  color: white;
+}
+
+.header a:hover{
+  color: rgb(87, 164, 252);
+  font-weight: bold;
+}
+
+
+
+.footer {
+  background-color: rgb(110, 0, 0);
+  padding: 10px;
+  border: 5px black solid;
+}
+
+.footer li {
+  
+  color: white;
+  display: inline;
+  padding: 2px;
+  margin: 2px;
+}
+ 
+.footer a:hover{
+  color: rgb(87, 164, 252);
+  font-weight: bold;
+}
+.main-index{
+  min-height: 60vh;
+}
+
+  /* --------------------------------------------------------- */
+  /* Estilos aplicables a todas las paginas */
+
+.titulo-principal {
+  margin: 10px;
+}
+.titulo-secundario {
+  margin: 8px;
+}
+
+/* ------------------------------------------------------- */
+/* Estilos para Index */
+
+.lista-videos {
+  border: 1px black solid;
+}
+.lista-videos li {
+  display: inline;
+}
+/* -------------------------------------------------------- */
+/* Estilos para Campeonato */
+.campeonato {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.campeonato div {
+  margin: 5px;
+  background-color: rgb(255, 191, 184);
+}
+.campeonato div table {
+  margin: 2px;
+}
+.campeonato div table tr th {
+  margin: 2px;
+  text-align: center;
+}
+.campeonato div table tr td {
+  margin: 2px;
+  text-align: center;
+}
+/* ----------------------------------------------------------- */
+/* Estilos para Info de equipos y pilotos */
+
+.grid-info {
+  display: grid;
+  grid-template-areas:
+    "info-equipo-1 info-piloto-1-1 info-piloto-2-1"
+    "info-equipo-2 info-piloto-1-2 info-piloto-2-2"
+    "resto-grid-info resto-grid-info resto-grid-info";
+  grid-template-rows: 40vw 30vw 30vw;
+}
+.grid-info section {
+  border: black solid 2px;
+}
+
+/* --------------------------------------------------------------- */
+/* Estilos para tienda */
+
+.grid-tienda {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+  grid-template-areas:
+    "filtros-tienda filtros-tienda"
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "item7 item8"
+    "item9 item10"
+    "item11 item12";
+}
+.grid-tienda section {
+  border: 2px solid black;
+  background-color: bisque;
+}
+.filtros-tienda{
+  grid-area: filtros-tienda;
+}
+.item1{
+  grid-area: item1;
+}
+.item2{
+  grid-area: item2;
+}
+.item3{
+  grid-area: item3;
+}
+.item4{
+  grid-area: item4;
+}
+.item5{
+  grid-area: item5;
+}
+.item6{
+  grid-area: item6;
+}
+.item7{
+  grid-area: item7;
+}
+.item8{
+  grid-area: item8;
+}
+.item9{
+  grid-area: item9;
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilos para NETFLIX */
+.netflix {
+  display: flex;
+  justify-content: space-evenly;
+}
+.netflix div {
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  .grid-tienda{
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 12vh 12vh 12vh 12vh 12vh;
+  grid-template-areas:
+    "filtros-tienda filtros-tienda filtros-tienda"
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9"
+    "item10 item11 item12";
+  }
+
+  .header{
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px){
+    .grid-tienda {
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 15vh 15vh 15vh 15vh;
+        grid-template-areas:
+          "filtros-tienda item1 item2 item3"
+          "filtros-tienda item4 item5 item6"
+          "filtros-tienda item7 item8 item9"
+          "filtros-tienda item10 item11 item12";
+      }
+}
