@@ -162,7 +162,7 @@
 }
 .grid-galeria section {
   border: 2px solid black;
-  background-color: bisque;
+  background-color: rgb(255, 230, 230);
   margin: 5px;
 }
 
@@ -231,7 +231,5 @@
   }
           
       }
-      .header{
-        flex-direction: row;
-      }
+      
 
