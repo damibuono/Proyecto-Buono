@@ -188,10 +188,14 @@
 .netflix {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 .netflix div {
   margin: 5px;
 }
+
+
+/* MEDIA QUERYS */
 @media (min-width: 768px) {
   .grid-tienda{
     grid-template-columns: 1fr 1fr 1fr;
@@ -205,6 +209,9 @@
   }
 
   .header{
+    flex-direction: row;
+  }
+  .netflix{
     flex-direction: row;
   }
 }
