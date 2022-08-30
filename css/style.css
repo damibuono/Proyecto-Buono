@@ -17,13 +17,14 @@
 
 .header{
   /* background-color: rgb(110, 0, 0) ; */
-  background-image: linear-gradient(to bottom, rgb(110, 0, 0), rgb(40, 104, 141));
+  background-image: linear-gradient(to bottom, rgb(110, 0, 0), rgb(74, 178, 238));
   padding: 10px;
   border: 5px black solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  align-items: stretch;
 }
 
 .header img {
@@ -49,11 +50,13 @@
   transition: .3s;
 }
 
-
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: rgb(252 87 87 / 90%);
+}
 
 .footer {
   /* background-color: rgb(110, 0, 0); */
-  background-image: linear-gradient(to top, rgb(110, 0, 0), rgb(40, 104, 141));
+  background-image: linear-gradient(to top, rgb(110, 0, 0), rgb(74, 178, 238));
   padding: 10px;
   border: 5px black solid;
 }
@@ -116,20 +119,7 @@
   margin: 2px;
   text-align: center;
 }
-/* ----------------------------------------------------------- */
-/* Estilos para Info de equipos y pilotos */
 
-.grid-info {
-  display: grid;
-  grid-template-areas:
-    "info-equipo-1 info-piloto-1-1 info-piloto-2-1"
-    "info-equipo-2 info-piloto-1-2 info-piloto-2-2"
-    "resto-grid-info resto-grid-info resto-grid-info";
-  grid-template-rows: 40vw 30vw 30vw;
-}
-.grid-info section {
-  border: black solid 2px;
-}
 
 /* --------------------------------------------------------------- */
 /* Estilos para tienda */
@@ -208,9 +198,7 @@
     "item10 item11 item12";
   }
 
-  .header{
-    flex-direction: row;
-  }
+ 
   .netflix{
     flex-direction: row;
   }
@@ -224,5 +212,8 @@
           "filtros-tienda item4 item5 item6"
           "filtros-tienda item7 item8 item9"
           "filtros-tienda item10 item11 item12";
+      }
+      .header{
+        flex-direction: row;
       }
 }
