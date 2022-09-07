@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.header {
+  /* background-color: rgb(110, 0, 0) ; */
+  background-image: linear-gradient(to bottom, #6e0000, #4ab2ee);
+  padding: 10px;
+  border: 5px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch; }
+  .header img {
+    height: 80px; }
+  .header ul {
+    list-style: none;
+    display: flex; }
+  .header li {
+    padding: 15px; }
+  .header a {
+    color: white; }
+    .header a :hover {
+      color: #fc5757;
+      font-weight: bold;
+      transition: 0.3s; }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #fc5701; }
+
+.footer {
+  background-image: linear-gradient(to top, #6e0000, #4ab2ee);
+  padding: 10px;
+  border: 5px black solid; }
+  .footer li {
+    color: white;
+    display: inline;
+    padding: 2px;
+    margin: 2px; }
+  .footer a {
+    color: white; }
+    .footer a :hover {
+      color: #fc5757;
+      font-weight: bold;
+      transition: 0.3s; }
+
+.main-index {
+  min-height: 60vh; }
+
+.titulo-principal {
+  margin: 10px; }
+
+.titulo-secundario {
+  margin: 8px; }
+
+.lista-videos {
+  border: 1px black solid; }
+  .lista-videos li {
+    display: inline; }
+
+.campeonato {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .campeonato div {
+    margin: 5px;
+    background-color: #ffbfb8; }
+    .campeonato div table {
+      margin: 2px; }
+      .campeonato div table tr th {
+        margin: 2px;
+        text-align: center; }
+      .campeonato div table tr td {
+        margin: 2px;
+        text-align: center; }
+
+.galeria {
+  width: 480px; }
+
+.carousel-padre {
+  width: 480px;
+  margin: 0 auto; }
+
+.descrip {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem; }
+
+.photo-title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem; }
+
+.grid-galeria {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 360px);
+  grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10"; }
+  .grid-galeria section {
+    border: 2px solid black;
+    background-color: #ffe6e6;
+    margin: 5px; }
+
+.item1 {
+  grid-area: item1; }
+
+.item2 {
+  grid-area: item2; }
+
+.item3 {
+  grid-area: item3; }
+
+.item4 {
+  grid-area: item4; }
+
+.item5 {
+  grid-area: item5; }
+
+.item6 {
+  grid-area: item6; }
+
+.item7 {
+  grid-area: item7; }
+
+.item8 {
+  grid-area: item8; }
+
+.item9 {
+  grid-area: item9; }
+
+.item10 {
+  grid-area: item10; }
+
+.netflix {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; }
+  .netflix div {
+    margin: 5px; }
+
+@media (min-width: 768px) {
+  .netflix {
+    flex-direction: row; } }
+
+@media (min-width: 1024px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(5, 360px);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10"; } }
