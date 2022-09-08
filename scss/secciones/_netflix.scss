@@ -1,0 +1,17 @@
+.netflix {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    div{
+        margin: 5px;
+    }
+  }
+
+  @media (min-width: 768px) {
+  
+
+ 
+    .netflix{
+      flex-direction: row;
+    }
+  }

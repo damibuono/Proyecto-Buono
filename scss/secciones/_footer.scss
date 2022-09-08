@@ -1,0 +1,19 @@
+.footer {
+    background-image: linear-gradient(to top, rgb(110, 0, 0), rgb(74, 178, 238));
+    padding: 10px;
+    border: 5px black solid;
+    li {
+      color: white;
+      display: inline;
+      padding: 2px;
+      margin: 2px;
+    }
+    a {
+      color: white;
+      :hover {
+        color: rgb(252, 87, 87);
+        font-weight: bold;
+        transition: 0.3s;
+      }
+    }
+  }

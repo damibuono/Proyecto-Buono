@@ -1,0 +1,21 @@
+.campeonato {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    div {
+      margin: 5px;
+      background-color: rgb(255, 191, 184);
+      table {
+        margin: 2px;
+        tr th {
+          margin: 2px;
+          text-align: center;
+        }
+        tr td {
+          margin: 2px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  

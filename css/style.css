@@ -48,7 +48,7 @@
       transition: 0.3s; }
 
 .main-index {
-  min-height: 60vh; }
+  min-height: 80vh; }
 
 .titulo-principal {
   margin: 10px; }
@@ -133,6 +133,12 @@
 .item10 {
   grid-area: item10; }
 
+@media (min-width: 1024px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(5, 360px);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10"; } }
+
 .netflix {
   display: flex;
   justify-content: space-evenly;
@@ -143,9 +149,3 @@
 @media (min-width: 768px) {
   .netflix {
     flex-direction: row; } }
-
-@media (min-width: 1024px) {
-  .grid-galeria {
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(5, 360px);
-    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10"; } }
