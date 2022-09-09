@@ -1,0 +1,13 @@
+Keywords:
+-index: formula1, mundo, f1, argentina, automovilismo, autos, carreras
+-campeonato: formula1, f1, clasificacion, automovilismo, campeonato, mundial
+-contacto: formula1, f1, informacion, ayuda, contacto, atencion
+-galeria: formula1, f1, galeria, ferrari, mercedes, redbull, mclaren, fotos
+-netflix: drive, f1, formula1, serie, netflix, documental
+
+Descripciones:
+-index: Mundo F1 Argentina es la pagina web sobre la actualidad del mundo de la formula 1 para los fanaticos argentinos
+-campeonato: Tablas de pilotos y equipos del campeonato mundial de la Formula 1
+-contacto: Formulario para que los usuarios hagan las consultas
+-galeria: Galeria de fotos de los equipos y pilotos participantes de la formula 1
+-netflix: Resumenes y reseñas de las temporadas de la serie Drive to Survive disponible en Netflix
