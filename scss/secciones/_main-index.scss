@@ -3,9 +3,11 @@
   }
   .titulo-principal {
     margin: 10px;
+    @include estilo-titulos(30px);
   }
   .titulo-secundario {
     margin: 8px;
+    @include estilo-titulos (20px);
   }
   
   .lista-videos {

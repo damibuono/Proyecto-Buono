@@ -1,38 +1,37 @@
 .header {
-    /* background-color: rgb(110, 0, 0) ; */
-    background-image: linear-gradient(
-      to bottom,
-      rgb(110, 0, 0),
-      rgb(74, 178, 238)
-    );
-    padding: 10px;
-    border: 5px black solid;
+  /* background-color: rgb(110, 0, 0) ; */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(110, 0, 0),
+    rgb(74, 178, 238)
+  );
+  padding: 10px;
+  border: 5px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  &__img {
+    height: 80px;
+  }
+  &__ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-items: stretch;
-    img {
-      height: 80px;
-    }
-    ul {
-      list-style: none;
-      display: flex;
-    }
     li {
       padding: 15px;
-    }
-    a {
-      color: white;
-      :hover {
-        color: rgb(252, 87, 87);
-        font-weight: bold;
-        transition: 0.3s;
+      a {
+        color: white;
+        :hover {
+          color: rgb(252, 87, 87);
+          font-weight: bold;
+          transition: 0.3s;
+        }
       }
     }
   }
-  .navbar-nav .nav-link.active,
-  .navbar-nav .show > .nav-link {
-    color: rgb(252, 87, 87 / 90%);
-  }
-  
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: rgb(252, 87, 87 / 90%);
+}

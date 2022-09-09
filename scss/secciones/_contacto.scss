@@ -1,0 +1,6 @@
+.form{
+    padding: 20px;
+    margin: 10px;
+    min-height: 60vh;
+    @extend %estilo-form;
+}

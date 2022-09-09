@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@import './variables/colores';
+@import './variables/typo';
+@import './variables/tamanios';
+@import './variables/extend';
+
+
 @import './secciones/header';
 @import './secciones/footer';
 @import './secciones/main-index';

@@ -1,0 +1,11 @@
+%estilo-form{
+    background-color: $celestito;
+    color: rgb(107, 39, 39);
+    border: solid black;
+}
+
+@mixin estilo-titulos ($size) {
+    font-size: $size; 
+    font-weight: 300;
+    font-family: $roboto-negrita;
+}
