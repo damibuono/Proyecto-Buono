@@ -73,6 +73,10 @@
   .lista-videos li {
     display: inline; }
 
+.body-backround {
+  background-image: url(../variables/Fangio.jpg);
+  background-size: cover; }
+
 .campeonato {
   display: flex;
   align-items: center;
