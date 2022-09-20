@@ -1,10 +1,12 @@
 .campeonato {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items:center;
     justify-content: space-evenly;
     div {
-      margin: 5px;
+      margin: 10px;
       background-color: rgb(255, 191, 184);
+      border: 2px black solid;
       table {
         margin: 2px;
         tr th {
@@ -18,4 +20,23 @@
       }
     }
   }
+  .gold{
+    background-color: gold;
+  }
+  .silver{
+    background-color: silver;
+  }
+  .bronze{
+    background-color: rgb(216, 122, 60);
+  }
   
+  @media (min-width: 768px) {
+  
+
+ 
+    .campeonato{
+      flex-direction: row;
+      align-items: flex-start;
+      
+    }
+  }

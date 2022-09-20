@@ -6,8 +6,8 @@
 
 .form {
   background-color: #a9e4ff;
-  color: #6b2727;
-  border: solid black; }
+  border: solid black;
+  max-width: 60vw; }
 
 .header {
   /* background-color: rgb(110, 0, 0) ; */
@@ -69,17 +69,27 @@
   font-family: "Roboto", sans-serif; }
 
 .lista-videos {
-  border: 1px black solid; }
-  .lista-videos li {
-    display: inline; }
+  display: flex;
+  flex-direction: column; }
+  .lista-videos div {
+    margin: 10px; }
+
+.negrita {
+  font-weight: bold; }
+
+@media (min-width: 1024px) {
+  .lista-videos {
+    flex-direction: row; } }
 
 .campeonato {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
   .campeonato div {
-    margin: 5px;
-    background-color: #ffbfb8; }
+    margin: 10px;
+    background-color: #ffbfb8;
+    border: 2px black solid; }
     .campeonato div table {
       margin: 2px; }
       .campeonato div table tr th {
@@ -89,10 +99,27 @@
         margin: 2px;
         text-align: center; }
 
+.gold {
+  background-color: gold; }
+
+.silver {
+  background-color: silver; }
+
+.bronze {
+  background-color: #d87a3c; }
+
+@media (min-width: 768px) {
+  .campeonato {
+    flex-direction: row;
+    align-items: flex-start; } }
+
 .form {
   padding: 20px;
   margin: 10px;
   min-height: 60vh; }
+  .form input:focus {
+    background-color: #cde4ff;
+    transform: scale(1.1); }
 
 .galeria {
   width: 480px; }

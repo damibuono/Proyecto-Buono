@@ -3,4 +3,9 @@
     margin: 10px;
     min-height: 60vh;
     @extend %estilo-form;
+    input:focus{
+        background-color: rgb(205, 228, 255);
+        transform: scale(1.1);
+    }
 }
+
