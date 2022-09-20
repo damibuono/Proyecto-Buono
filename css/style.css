@@ -73,10 +73,6 @@
   .lista-videos li {
     display: inline; }
 
-.body-backround {
-  background-image: url(../variables/Fangio.jpg);
-  background-size: cover; }
-
 .campeonato {
   display: flex;
   align-items: center;
@@ -170,3 +166,10 @@
 @media (min-width: 768px) {
   .netflix {
     flex-direction: row; } }
+
+.body-background {
+  background-image: url(../Logo/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }

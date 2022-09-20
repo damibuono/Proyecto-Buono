@@ -17,3 +17,11 @@
 @import './secciones/contacto';
 @import './secciones/galeria';
 @import './secciones/netflix';
+
+.body-background{
+  background-image: url(../Logo/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
