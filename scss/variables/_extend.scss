@@ -1,8 +1,10 @@
 %estilo-form{
     background-color: $celestito;
+    background-image: url(../../Logo/Fangio.jpg);
     
     border: solid black;
-    max-width: 60vw;
+    max-width: 100vw;
+    background-position: center center;
 }
 
 @mixin estilo-titulos ($size) {

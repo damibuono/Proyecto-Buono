@@ -6,8 +6,10 @@
 
 .form {
   background-color: #a9e4ff;
+  background-image: url(../../Logo/Fangio.jpg);
   border: solid black;
-  max-width: 60vw; }
+  max-width: 100vw;
+  background-position: center center; }
 
 .header {
   /* background-color: rgb(110, 0, 0) ; */
@@ -25,7 +27,8 @@
     list-style: none;
     display: flex; }
     .header__ul li {
-      padding: 15px; }
+      padding: 5px;
+      text-align: center; }
       .header__ul li a {
         color: white; }
         .header__ul li a :hover {
@@ -76,6 +79,9 @@
 
 .negrita {
   font-weight: bold; }
+
+.video-principal {
+  margin: 10px; }
 
 @media (min-width: 1024px) {
   .lista-videos {
@@ -143,8 +149,6 @@
   grid-template-rows: repeat(10, 360px);
   grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10"; }
   .grid-galeria section {
-    border: 2px solid black;
-    background-color: #ffe6e6;
     margin: 5px; }
 
 .item1 {
@@ -189,6 +193,9 @@
   flex-direction: column; }
   .netflix div {
     margin: 5px; }
+
+h4 {
+  margin: 5px; }
 
 @media (min-width: 768px) {
   .netflix {
